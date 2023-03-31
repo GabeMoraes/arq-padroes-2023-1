@@ -48,7 +48,13 @@ public class PizzaShop {
             p = d;
         }
 
-        ((Decorator)p).order();
+        if(p instanceof Decorator){
+            ((Decorator)p).order();
+        }
+        else{
+            p.order();
+        }
 
+        s.close();
     }
 }

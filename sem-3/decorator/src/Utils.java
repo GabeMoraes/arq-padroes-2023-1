@@ -23,7 +23,7 @@ public abstract class Utils {
         String selected = s.nextLine();
         System.out.println(selected);
 
-        if(selected.toLowerCase()=="s"){
+        if(selected.equals("s")){
             b = true;
             return b;
         }
@@ -41,13 +41,16 @@ public abstract class Utils {
         String selected = s.nextLine();
         System.out.println(selected);
 
-        if(selected.toLowerCase()=="s"){
+        switch(selected){
+            case "s":
             b = true;
-            return b;
+            break;
+
+            default:
+            break;
         }
-        else{
-            return b;
-        }
+
+        return b;
     }
 
     public static boolean selectMayonaise(Scanner s){
