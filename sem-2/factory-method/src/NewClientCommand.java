@@ -19,6 +19,9 @@ public class NewClientCommand extends Command{
             s = new BadShop();
             s.newClient();
             break;
+
+            default:
+            System.out.println("incorrect client type");
         }
     }
 }
